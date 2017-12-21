@@ -1,0 +1,22 @@
+Map<Integer,String> myMap = new Map<Integer,String>();
+
+myMap.put(1, 'Jonno');
+myMap.put(2, 'Dan');
+
+system.debug('Map size: ' + myMap.size());
+system.debug('Value at 1: ' + myMap.get(1));
+
+system.debug('Loop through map values');
+for (string s : myMap.values()){
+	system.debug(s);
+}
+
+system.debug('Loop through map keys');
+for (integer i : myMap.keySet()){
+	system.debug(i);
+}
+    
+system.debug('Does map contain key 1: ' + myMap.containsKey(1));
+system.debug('Does map contain key 3: ' + myMap.containsKey(3));
+
+system.debug('Hash code: ' + myMap.hashCode());
